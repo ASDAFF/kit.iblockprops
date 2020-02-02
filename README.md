@@ -2,7 +2,6 @@
 
 # Классы CCOLLECTEDIBlockPropSection, CCOLLECTEDIBlockPropElement
 ## Удобная привязка к разделам/элементам инфоблока
-https://marketplace.1c-bitrix.ru/solutions/aat.iblockprops/ 
 
 Описание 
 
