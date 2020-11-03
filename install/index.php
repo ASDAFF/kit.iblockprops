@@ -3,9 +3,9 @@
  * Copyright (c) 2/2/2020 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
  */
 
-class collected_iblockprops extends CModule
+class kit_iblockprops extends CModule
 {
-    var $MODULE_ID = "collected.iblockprops";
+    var $MODULE_ID = "kit.iblockprops";
 	public $MODULE_VERSION;
 	public $MODULE_VERSION_DATE;
 	public $MODULE_NAME;
@@ -35,20 +35,20 @@ class collected_iblockprops extends CModule
     
     public function DoInstall()
     {
-		CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/collected.iblockprops/install/js/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/js/collected.iblockprops/', true, true);
-		CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/collected.iblockprops/install/css/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/css/collected.iblockprops/', true, true);
-		RegisterModuleDependences('iblock', 'OnIBlockPropertyBuildList', 'collected.iblockprops', 'CCOLLECTEDIBlockPropSection', 'GetUserTypeDescription');
-		RegisterModuleDependences('iblock', 'OnIBlockPropertyBuildList', 'collected.iblockprops', 'CCOLLECTEDIBlockPropElement', 'GetUserTypeDescription');
-        RegisterModule("collected.iblockprops");
+		CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/kit.iblockprops/install/js/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/js/kit.iblockprops/', true, true);
+		CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/kit.iblockprops/install/css/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/css/kit.iblockprops/', true, true);
+		RegisterModuleDependences('iblock', 'OnIBlockPropertyBuildList', 'kit.iblockprops', 'CKITIBlockPropSection', 'GetUserTypeDescription');
+		RegisterModuleDependences('iblock', 'OnIBlockPropertyBuildList', 'kit.iblockprops', 'CKITIBlockPropElement', 'GetUserTypeDescription');
+        RegisterModule("kit.iblockprops");
     }
     
     public function DoUninstall()
     {
-		DeleteDirFilesEx('/bitrix/js/collected.iblockprops/');
-		DeleteDirFilesEx('/bitrix/css/collected.iblockprops/');
-        UnRegisterModuleDependences('iblock', 'OnIBlockPropertyBuildList', 'collected.iblockprops', 'CCOLLECTEDIBlockPropSection', 'GetUserTypeDescription');
-        UnRegisterModuleDependences('iblock', 'OnIBlockPropertyBuildList', 'collected.iblockprops', 'CCOLLECTEDIBlockPropElement', 'GetUserTypeDescription');
-        UnRegisterModule("collected.iblockprops");
+		DeleteDirFilesEx('/bitrix/js/kit.iblockprops/');
+		DeleteDirFilesEx('/bitrix/css/kit.iblockprops/');
+        UnRegisterModuleDependences('iblock', 'OnIBlockPropertyBuildList', 'kit.iblockprops', 'CKITIBlockPropSection', 'GetUserTypeDescription');
+        UnRegisterModuleDependences('iblock', 'OnIBlockPropertyBuildList', 'kit.iblockprops', 'CKITIBlockPropElement', 'GetUserTypeDescription');
+        UnRegisterModule("kit.iblockprops");
     }
 }
 ?>

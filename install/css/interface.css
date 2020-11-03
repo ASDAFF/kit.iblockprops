@@ -3,7 +3,7 @@
  */
 
 
-#bx-admin-prefix .collected-iblockprops-list {
+#bx-admin-prefix .kit-iblockprops-list {
     background: #ffffff;    
     border: 1px solid;
     border-color: #87919c #959ea9 #9ea7b1 #959ea9;
@@ -17,38 +17,38 @@
     overflow-y: auto;
 }
 
-#bx-admin-prefix .collected-iblockprops-list li{
+#bx-admin-prefix .kit-iblockprops-list li{
     list-style: none;
     margin: 4px 0;
 }
 
-#bx-admin-prefix .collected-iblockprops-list li input[type=checkbox],
-#bx-admin-prefix .collected-iblockprops-list li input[type=radio]{
+#bx-admin-prefix .kit-iblockprops-list li input[type=checkbox],
+#bx-admin-prefix .kit-iblockprops-list li input[type=radio]{
     cursor: pointer;
 }
 
-#bx-admin-prefix .collected-iblockprops-list.collected-iblockprops-multy li{
+#bx-admin-prefix .kit-iblockprops-list.kit-iblockprops-multy li{
     margin: 7px 0;
 }
 
-#bx-admin-prefix .collected-iblockprops-list li label.parent {
+#bx-admin-prefix .kit-iblockprops-list li label.parent {
     border-bottom: 1px dotted;
     cursor: pointer;
 }
 
-#bx-admin-prefix .collected-iblockprops-list li ul{
+#bx-admin-prefix .kit-iblockprops-list li ul{
     padding: 0 0 0 20px;
 }
 
-#bx-admin-prefix .collected-iblockprops-list li ul{
+#bx-admin-prefix .kit-iblockprops-list li ul{
     display: none;
 }
 
-#bx-admin-prefix .collected-iblockprops-list + .reset{
+#bx-admin-prefix .kit-iblockprops-list + .reset{
     margin: 5px 0;
 }
 
-#bx-admin-prefix .collected-iblockprops-list + .reset span{
+#bx-admin-prefix .kit-iblockprops-list + .reset span{
     cursor: pointer;
     border-bottom: 1px dotted;
 }

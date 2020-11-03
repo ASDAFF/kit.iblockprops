@@ -1,6 +1,6 @@
-# collected.iblockprops
+# kit.iblockprops
 
-# Классы CCOLLECTEDIBlockPropSection, CCOLLECTEDIBlockPropElement
+# Классы CKITIBlockPropSection, CKITIBlockPropElement
 ## Удобная привязка к разделам/элементам инфоблока
 
 Описание 

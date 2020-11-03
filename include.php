@@ -4,17 +4,17 @@
  */
 
 CModule::AddAutoloadClasses(
-	'collected.iblockprops',
+	'kit.iblockprops',
 	array(
-		'CCOLLECTEDIBlockPropSection' => 'classes/general/iblock_prop_section.php',
-		'CCOLLECTEDIBlockPropElement' => 'classes/general/iblock_prop_element.php',
+		'CKITIBlockPropSection' => 'classes/general/iblock_prop_section.php',
+		'CKITIBlockPropElement' => 'classes/general/iblock_prop_element.php',
 	)
 );
 
 $arJSConfig = array(
-	'js' => '/bitrix/js/collected.iblockprops/interface.js',
-	'css' => '/bitrix/css/collected.iblockprops/interface.css',
+	'js' => '/bitrix/js/kit.iblockprops/interface.js',
+	'css' => '/bitrix/css/kit.iblockprops/interface.css',
 	'rel' => array('jquery'),
 );
 
-CJSCore::RegisterExt('collected_iblockprops', $arJSConfig);
+CJSCore::RegisterExt('kit_iblockprops', $arJSConfig);

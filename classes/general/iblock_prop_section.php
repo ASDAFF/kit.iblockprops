@@ -3,16 +3,16 @@
  * Copyright (c) 2/2/2020 Created By/Edited By ASDAFF asdaff.asad@yandex.ru
  */
 
-class CCOLLECTEDIBlockPropSection
+class CKITIBlockPropSection
 {
 	public function GetUserTypeDescription()
 	{
 		return array(
 			"PROPERTY_TYPE" => "G",
-			"USER_TYPE" => "COLLECTEDSection",
+			"USER_TYPE" => "KITSection",
 			"DESCRIPTION" => "Привязка к разделам (checkbox/radio)",		        
-			"GetPropertyFieldHtml" => array("CCOLLECTEDIBlockPropSection", "GetPropertyFieldHtml"),
-			"GetPropertyFieldHtmlMulty" => array("CCOLLECTEDIBlockPropSection", "GetPropertyFieldHtml"),
+			"GetPropertyFieldHtml" => array("CKITIBlockPropSection", "GetPropertyFieldHtml"),
+			"GetPropertyFieldHtmlMulty" => array("CKITIBlockPropSection", "GetPropertyFieldHtml"),
 		);
 	}
 	
@@ -59,9 +59,9 @@ class CCOLLECTEDIBlockPropSection
 	    }
 	    
 	    if ($multiple)
-	        $strReturn = '<ul class="collected-iblockprops-list collected-iblockprops-multy">';
+	        $strReturn = '<ul class="kit-iblockprops-list kit-iblockprops-multy">';
 	    else 
-	        $strReturn = '<ul class="collected-iblockprops-list">';
+	        $strReturn = '<ul class="kit-iblockprops-list">';
 	    
 	    $previousLevel = 0;
 	    
@@ -100,7 +100,7 @@ class CCOLLECTEDIBlockPropSection
         
         $strReturn .= '<div class="reset"><span>Снять выделение</span></div>';
         
-        CJSCore::Init(array('collected_iblockprops'));
+        CJSCore::Init(array('kit_iblockprops'));
 	    
         return $strReturn;		
 	}
